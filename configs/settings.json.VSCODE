@@ -1,0 +1,11 @@
+{
+    "terminal.integrated.fontFamily": "MesloLGM Nerd Font",
+    "workbench.colorTheme": "One Dark Pro Darker",
+    "window.titleBarStyle": "custom",
+    "rust-analyzer.checkOnSave.command": "clippy",
+    "editor.fontSize": 16,
+    "[rust]":{
+        "editor.defaultFormatter": "rust-lang.rust-analyzer",
+        "editor.formatOnSave": true
+    }
+}
