@@ -1,0 +1,2 @@
+Add Nerdfonts;
+Add fonts-noto-color-emoji
