@@ -110,8 +110,11 @@ alias ls="exa --icons"
 alias lt="exa --tree --icons -a -I '.git|__pycache__|.mypy_cache|.ipynb_checkpoints'"
 alias arch="archey3"
 alias vim="nvim"
+alias k="kubectl"
+alias dashboard="kubectl -n kubernetes-dashboard create token admin-user | xclip -selection clipboard"
 
 eval "$(starship init zsh)"
 
 . "$HOME/.cargo/env"
 [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
+[[ $commands[kubectl] ]] && source <(kubectl completion zsh)
